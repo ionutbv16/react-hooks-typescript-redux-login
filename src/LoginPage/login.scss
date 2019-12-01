@@ -1,0 +1,157 @@
+// Define a color variable
+$color-sassy: #cc4397;
+$color-blue: #0059ff;
+
+.AppWrapper {
+  display: flex;
+
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Wrapper {
+  display: flex;
+  background-color: black;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70px;
+}
+h2 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.Content {
+  height: 70px;
+  min-height: 70px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+.LogoWrapper {
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 1 0%;
+}
+
+.Logo {
+  width: 205px;
+  height: auto;
+  margin-left: 15px;
+}
+
+@media (min-width: 800px) {
+  .Menu {
+    display: none;
+  }
+}
+
+.Menu {
+  width: 35px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+@media (min-width: 800px) {
+  .NavContent {
+    box-shadow: none;
+    display: flex;
+    background-color: transparent;
+    letter-spacing: 1.5px;
+    line-height: 22.5px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    font-size: 15px;
+    animation: 0s ease 0s 1 normal none running none;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 15px -5px;
+  }
+}
+/*
+.Nav {
+  flex-direction: column;
+  font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1.8px;
+  line-height: 27px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 55px;
+  background-color: white;
+  z-index: 2000;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 15px -5px;
+  display: none;
+  animation: 250ms ease-in-out 0s 1 normal forwards running bZFubP;
+}
+*/
+
+@media (min-width: 800px) {
+  .NavItem {
+    color: white;
+    padding: 0px;
+    border-bottom: none;
+  }
+}
+
+.NavItem {
+  display: flex;
+  font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+  -webkit-box-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  margin: 0px 15px;
+  padding: 15px;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.app {
+  color: $color-blue;
+  font-size: 2rem;
+  text-align: center;
+
+  .sassyDiv {
+    color: $color-sassy;
+    font-size: 3rem;
+  }
+}
+
+@font-face {
+  font-family: 'SimplonNorm-Medium';
+  src: local('SimplonNorm-Medium'),
+    url(/simplonnorm-medium-webfont.woff) format('woff');
+}
+
+body {
+  background-color: rgb(240, 240, 240) !important;
+}

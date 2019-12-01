@@ -1,0 +1,11 @@
+{
+  "setupFiles": ["raf/polyfill", "<rootDir>/src/setupTests.js"],
+  "moduleNameMapper": {
+    "\\.(css|scss)$": "<rootDir>src/__mocks__/styleMock.js"
+  },
+  "roots": ["<rootDir>/src"],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+}
